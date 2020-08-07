@@ -32,8 +32,12 @@ router.get("/google/redirect", passport.authenticate("google"), (req, res) => {
 router.get("/lazada", passport.authenticate("oauth2"));
 
 // callback route for google to redirect to
-router.get("/lazada/redirect", passport.authenticate("oauth2"), (req, res) => {
-  res.redirect("/profile/");
-});
+router.get(
+  "/lazada/redirect",
+  passport.authenticate("oauth2", { failureRedirect: "/login" }),
+  (req, res) => {
+    res.redirect("/profile/");
+  }
+);
 
 module.exports = router;
