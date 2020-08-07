@@ -58,6 +58,10 @@ passport.use(
     },
     // passport callback function
     (accessToken, refreshToken, profile, done) => {
+      console.log(accessToken);
+      console.log(refreshToken);
+      console.log(profile);
+
       new User({
         username: profile.account,
         googleId: profile.account,
