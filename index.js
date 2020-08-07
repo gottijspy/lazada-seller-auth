@@ -2,7 +2,7 @@ const express = require("express");
 //var fs = require("fs");
 //var https = require("https");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const authRoutes = require("./routes/auth-routes");
 const profileRoutes = require("./routes/profile-routes");
