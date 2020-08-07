@@ -32,7 +32,7 @@ router.get("/google/redirect", passport.authenticate("google"), (req, res) => {
 router.get("/lazada", passport.authenticate("oauth2"));
 
 // callback route for google to redirect to
-router.get("/lazada/redirect", passport.authenticate("oauth2"), (req, res) => {
+router.get("/lazada/redirect", (req, res) => {
   res.send("you reached the lazada callback URI");
 });
 
