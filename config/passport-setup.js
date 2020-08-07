@@ -55,9 +55,11 @@ passport.use(
       clientID: keys.lazada.clientID,
       clientSecret: keys.lazada.clientSecret,
       callbackURL: "/auth/lazada/redirect",
+      passReqToCallback: true,
     },
     // passport callback function
-    (accessToken, refreshToken, profile, done) => {
+    (req, accessToken, refreshToken, profile, done) => {
+      console.log(req);
       console.log(accessToken);
       console.log(refreshToken);
       console.log(profile);
