@@ -59,7 +59,7 @@ passport.use(
     },
     // passport callback function
     (req, accessToken, refreshToken, profile, done) => {
-      console.log(req);
+      console.log(req.query);
       console.log(accessToken);
       console.log(refreshToken);
       console.log(profile);
