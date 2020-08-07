@@ -33,7 +33,7 @@ router.get("/lazada", passport.authenticate("oauth2"));
 
 // callback route for google to redirect to
 router.get("/lazada/redirect", passport.authenticate("oauth2"), (req, res) => {
-  res.send("you reached the lazada callback URI");
+  res.redirect("/profile/");
 });
 
 module.exports = router;
