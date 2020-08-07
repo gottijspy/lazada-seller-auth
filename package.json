@@ -1,10 +1,10 @@
 {
-  "name": "ecomm-oauth-api",
+  "name": "lazada-seller-auth",
   "version": "1.0.0",
   "description": "OAuth implementation for several eCommerce vendors using Passport.js",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
