@@ -53,8 +53,8 @@ passport.use(
       tokenURL: "https://auth.lazada.com/rest/auth/token/create",
       clientID: keys.lazada.clientID,
       //clientSecret: EXAMPLE_CLIENT_SECRET,
-      callbackURL: "https://fastapicallback.herokuapp.com/body",
-      //callbackURL: "/auth/lazada/redirect",
+      //callbackURL: "https://fastapicallback.herokuapp.com/body",
+      callbackURL: "/auth/lazada/redirect",
     },
     () => {
       // passport callback function
