@@ -7,7 +7,8 @@ module.exports = {
     clientSecret: "5leLe-mV5sfVxT8pvsPni1TW",
   },
   lazada: {
-    clientID: "120817",
+    //clientID: "120817",
+    clientID: "121695",
   },
   mongodb: {
     dbURI:
