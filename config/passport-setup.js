@@ -50,8 +50,8 @@ passport.use(
   new OAuth2Strategy(
     {
       authorizationURL: "https://auth.lazada.com/oauth/authorize",
-      tokenURL: "https://lazada-server.herokuapp.com/CreateToken",
-      //tokenURL: "https://auth.lazada.com/rest/auth/token/create",
+      //tokenURL: "https://lazada-server.herokuapp.com/CreateToken",
+      tokenURL: "https://auth.lazada.com/rest/auth/token/create",
       clientID: keys.lazada.clientID,
       clientSecret: keys.lazada.clientSecret,
       callbackURL: "/auth/lazada/redirect",
